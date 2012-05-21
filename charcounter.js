@@ -1,4 +1,5 @@
 /*
+
 Character Counter
 
 A Twitter-style character counter
@@ -22,12 +23,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 SOFTWARE.
-*/
 
-/* 
-    PENDING ISSUES 
-    1. 'this' refers to DOM object (not JS object) during event execution
-    2. Existing text box characters are not 'seen' after page refreshes in IE
 */
 
 window.charCounter = {
