@@ -26,7 +26,7 @@ SOFTWARE.
 
 */
 
-window.charCounter = {
+window.counter = {
     textBox : window.document.getElementById("textBox"),
     display : window.document.getElementById("display"),
 
@@ -35,8 +35,8 @@ window.charCounter = {
 
     //Gets the number of characters the user has remaining in the text box before the character limit is reached.
     getRemainingChars : function () {
-        var charLength = window.charCounter.textBox.value.length;
-        var charLimit = window.charCounter.charLimit;
+        var charLength = window.counter.textBox.value.length;
+        var charLimit = window.counter.charLimit;
         /*
             If the text box is empty, then there are no characters in the text box, which means the character limit should be displayed to the user.
             Otherwise, subtract the current length from the character limit and display that number to the user.
@@ -46,9 +46,9 @@ window.charCounter = {
 
     //Appends the current number of characters in the text box
     setDisplay : function () {
-        var text = String(window.charCounter.getRemainingChars());
+        var text = String(window.counter.getRemainingChars());
         var textNode = {};
-        var container = window.charCounter.display;
+        var container = window.counter.display;
         var i = 0;
         textNode = window.document.createTextNode(text);
         /* 
@@ -78,4 +78,4 @@ window.charCounter = {
 
 };
 
-window.charCounter.init();
+window.counter.init();
